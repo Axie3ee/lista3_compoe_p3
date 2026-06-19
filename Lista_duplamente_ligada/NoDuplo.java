@@ -1,22 +1,13 @@
-public class No {
-    private String info;
-    private No proximo;
-    public No(String info) {
-        this.info = info;
-        this.proximo = null; //por clareza
+public class NoDuplo extends No{
+    private NoDuplo anterior;
+    public NoDuplo (String info) {
+        super(info);
+        this.anterior = null;
     }
-    public No getProximo() {
-        return proximo;
+    public NoDuplo getAnterior() {
+        return anterior;
     }
-    public void setProximo(No proximo) {
-        this.proximo = proximo;
-    }
-    public String getInfo() {
-        return info;
-    }
-    @Override
-    public String toString () {
-        //return "[" + info + ", " + proximo + "]";
-        return "[" + info + "]";
+    public void setAnterior(NoDuplo anterior) {
+        this.anterior = anterior;
     }
 }
