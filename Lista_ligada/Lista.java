@@ -1,5 +1,3 @@
-package lista3_compoe_p3.lista_ligada;
-
 public class Lista {
     private No primeiro;
     //construtor é o padrão
